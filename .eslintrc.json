@@ -1,0 +1,44 @@
+{
+  "extends": [
+    "eslint:all",
+    "plugin:react/recommended"
+  ],
+  "parseOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "script",
+    "ecmaFeatures": {
+      "impliedStrict": true
+    }
+  },
+  "plugins": [
+    "node",
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "object-curly-newline": ["error", {
+      "ObjectExpression": {"multiline": true, "minProperties": 1},
+      "ObjectPattern": {"multiline": true, "minProperties": 2}
+    }],
+    "one-var": ["error", "never"],
+    "quotes": ["error", "single", {
+      "avoidEscape": true,
+      "allowTemplateLiterals": true
+    }],
+    "quote-props": "off", // I don't target ES3 env
+    "node/no-deprecated-api": "error",
+    "node/no-missing-import": "error",
+    "node/no-missing-require": "error",
+    "node/no-unpublished-import": "error",
+    "node/no-unpublished-require": "error",
+    "node/no-unsupported-features": ["error", {"version": 6}],
+    "node/process-exit-as-throw": "error",
+    "node/shebang": "off"
+  }
+}

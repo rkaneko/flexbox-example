@@ -1,0 +1,53 @@
+{
+  "name": "flexbox-example",
+  "version": "1.0.0",
+  "description": "examples using css flexbox",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npm run lint:json && npm run lint:js",
+    "lint:js": "eslint src/",
+    "lint:json": "bash -c -e ./bin/lint-json.sh",
+    "lint:eslintrc": "jsonlint -q .eslintrc.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkaneko/flexbox-example.git"
+  },
+  "keywords": [
+    "flexbox"
+  ],
+  "author": "rkaneko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rkaneko/flexbox-example/issues"
+  },
+  "homepage": "https://github.com/rkaneko/flexbox-example#readme",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "font-awesome": "^4.6.3",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.12.0",
+    "eslint-plugin-node": "^1.4.0",
+    "eslint-plugin-react": "^5.1.1",
+    "express": "^4.13.4",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
+    "json-lint": "^0.1.0",
+    "jsonlint": "^1.6.2",
+    "postcss-loader": "^0.9.1",
+    "style-loader": "^0.13.1",
+    "stylelint": "^6.5.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.10.0"
+  }
+}
