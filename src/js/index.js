@@ -1,11 +1,12 @@
 'use strict';
 
+const React = require('react');
 const ReactDOM = require('react-dom');
 
 const Top = require('../components/top/top');
 
 ReactDOM.render(
-  Top,
+  <Top />,
   document.getElementsByClassName(
     'flexbox-example-main'
   )[0] // eslint-disable-line no-magic-numbers
