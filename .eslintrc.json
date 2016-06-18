@@ -1,7 +1,8 @@
 {
   "extends": [
     "eslint:all",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "plugin:node/recommended"
   ],
   "parseOptions": {
     "ecmaVersion": 6,
@@ -32,11 +33,6 @@
       "allowTemplateLiterals": true
     }],
     "quote-props": "off", // I don't target ES3 env
-    "node/no-deprecated-api": "error",
-    "node/no-missing-import": "error",
-    "node/no-missing-require": "error",
-    "node/no-unpublished-import": "error",
-    "node/no-unpublished-require": "error",
     "node/no-unsupported-features": ["error", {"version": 6}],
     "node/process-exit-as-throw": "error",
     "node/shebang": "off"
