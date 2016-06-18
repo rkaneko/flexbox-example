@@ -2,7 +2,7 @@
 
 const ReactDOM = require('react-dom');
 
-const Top = require('../modules/top/top');
+const Top = require('../components/top/top');
 
 ReactDOM.render(
   Top,
