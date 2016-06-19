@@ -3,9 +3,11 @@
 const React = require('react');
 const {PropTypes} = React;
 
+const ShareCard = require('../share-card/share-card');
+
 const Top = (top) => // eslint-disable-line no-unused-vars
   <div>
-  Hello flex examples!
+    <ShareCard />
   </div>
 ;
 

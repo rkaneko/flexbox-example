@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid .1em #b0bec5;
+  background-color: #eeeeee;
+  width: 8em;
+}
+
+.card__item + .card__item {
+  margin-top: .4em;
+}
+
+.icon {
+  color: #57727c;
+  padding-top: .2em;
+  font-size: 3.2em;
+}
+
+.label {
+  text-align: center;
+  padding-bottom: .4em;
+  color: #57727c;
+  font-size: 1.2em;
+}
