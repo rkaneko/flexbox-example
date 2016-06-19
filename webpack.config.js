@@ -33,14 +33,17 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]!postcss-loader'
+        loader: 'style-loader!css-loader?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]!postcss-loader',
+        exclude: [
+          path.resolve(__dirname, 'src', 'css', 'font-awesome.min.css')
+        ]
       },
       {
         test: /\.(woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'url-loader?limit=10000&minetype=application/font-woff'
       },
       {
-        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.(ttf|eot|svg|jpeg|jpg|woff|woff2)(\?.*$|$)/,
         loader: 'file-loader'
       },
       {

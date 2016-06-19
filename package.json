@@ -4,6 +4,10 @@
   "description": "examples using css flexbox",
   "main": "index.js",
   "scripts": {
+    "prebuild": "bash -c -e ./bin/prebuild.sh && npm run prebuild:css",
+    "prebuild:css": "cp node_modules/font-awesome/css/font-awesome.min.css dist/",
+    "build": "npm run prebuild && npm run build:js",
+    "build:js": "webpack",
     "lint": "npm run lint:json && npm run lint:js",
     "lint:js": "eslint src/",
     "lint:json": "bash -c -e ./bin/lint-json.sh",
