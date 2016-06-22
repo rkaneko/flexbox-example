@@ -1,0 +1,29 @@
+.shareButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid 0.1em #b0bec5;
+  border-radius: 0.4em;
+}
+
+.icon {
+  color: #57727c;
+  padding-top: .2em;
+  font-size: 3.2em;
+}
+
+.label {
+  background-color: #eef3f5;
+  border-top: solid 0.1em #b0bec5;
+  border-radius: 0 0 0.4em 0.4em;
+  color: #57727c;
+  text-align: center;
+  font-size: 1.2em;
+  padding-bottom: .4em;
+  width: 100%;
+}
+
+.width {
+  max-width: 8em;
+}
